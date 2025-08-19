@@ -1,0 +1,119 @@
+@import url(./vars.css);
+@import url(./normalize.css);
+
+html,
+body {
+  font-family: var(--main-font-famaly);
+  font-size: var(--main-font-size);
+  height: 100vh;
+  background-color: var(--main-background);
+}
+
+.container {
+  width: 534px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 19px 0 12px;
+  background: #4a4f56;
+  border-bottom: 1px solid black;
+}
+
+.title {
+  color: #ff8984;
+  text-align: center;
+  margin: 0;
+}
+
+.title-1 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.title-2 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.title-3 {
+  background: #4a4f56;
+  padding: 12px 0;
+  font-weight: normal;
+}
+
+.form {
+  padding: 20px 0 45px;
+}
+
+.form * {
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.form-items:nth-child(odd) {
+  background: #88839e;
+}
+
+.form-items:nth-child(even) {
+  background: #7a7593;
+}
+
+.form-items:hover {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  background: #625e77;
+}
+
+.form-items:active {
+  background: #ff8984;
+}
+
+.label {
+  display: block;
+  padding: 11px 12px 13px;
+}
+
+.input {
+  display: none;
+}
+
+.label > .input-check {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 16px;
+  background: #ffffff;
+  vertical-align: middle;
+}
+
+.small {
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.input:checked + .input-check {
+  background-image: url(../assets/img/Checklist.png);
+}
+
+.input:checked ~ .input-text,
+.input:checked ~ .input-text .small {
+  color: #9b96ac;
+}
+
+.input-text,
+.small {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.input:checked ~ .input-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #9b96ac;
+}
