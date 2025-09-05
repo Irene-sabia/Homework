@@ -1,0 +1,175 @@
+@import url("./vars.css");
+@import url("./normalize.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+html,
+body {
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-family);
+  min-height: 200vh;
+}
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 13px 15px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 12px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.lang-item {
+  text-decoration: none;
+  font-family: "Tourney", sans-serif;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-item {
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Francois One", sans-serif;
+}
+
+.menu-link {
+  text-align: center;
+}
+
+.sidebar {
+  min-height: 600px;
+  min-width: 485px;
+}
+.aside-menu {
+  position: sticky;
+  top: 102px;
+  padding: 10px;
+}
+.main {
+  padding-top: 150px;
+}
+
+.aside-menu-item {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.aside-menu-link::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 365px;
+  height: 1px;
+  background: #cbcbcb;
+}
+
+.aside-menu-link {
+  font-family: "Francois One", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+.title-2 {
+  position: relative;
+  display: inline-block;
+  font-family: "Francois One", sans-serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.title-2::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100px;
+  height: 8px;
+  background: #000;
+}
+
+.sup-title {
+  position: absolute;
+  top: -5px;
+  right: -72px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Farro", sans-serif;
+}
+
+.text {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.sub-linea {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.text {
+  margin-bottom: 40px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bg {
+  background: #dadada;
+}
+
+.background {
+  position: fixed;
+  z-index: -1;
+  top: 130px;
+  right: 0;
+}
