@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw_13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Francois+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="section">
+            <div class="side">
+                <h2 class="title-2">Create an Acount</h2>
+                <form action="" class="form">
+                    <div class="row">
+                        <div class="col col-half">
+                            <label for="first-name" class="label">First Name</label>
+                            <input type="text" id="first-name">
+                        </div>
+                        <div class="col col-half">
+                            <label for="last-name" class="label">Last Name</label>
+                            <input type="text" id="last-name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-full">
+                            <label for="mail" class="label">Email</label>
+                            <input type="email" id="mail">
+                            <p class="text">We'll never share your email with anyone else.</p>
+                        </div>
+                    </div>
+                    <div class="form-gender">
+                        <div class="gender-item">
+                            <label class="label">
+
+                                <input type="radio" name="gender">
+                                <span class="gender-check"></span>
+                                Male
+                            </label>
+                            <label class="label">
+
+                                <input type="radio" name="gender">
+                                <span class="gender-check"></span>
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-half">
+                            <label for="country" class="label">Country</label>
+                            <div class="select">
+                                <select name="country" id="country" required>
+                                    <option value="select" selected disabled>Select</option>
+                                    <option value="ukr">Ukraine</option>
+                                    <option value="es">Spain</option>
+                                    <option value="gr">Germany</option>
+                                    <option value="pr">Portugal</option>
+                                    <option value="pk">Poland</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col col-half">
+                            <label for="city" class="label">City</label>
+                            <input type="text" id="city">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-full">Sign Up</button>
+                    </div>
+                </form>
+                <p class="text text-end">
+                    By clicking the 'Sign Up' button, you confirm that you accept our
+                    <span class="text-blue">Terms of Use</span> and <span class="text-blue">Privacy Policy.</span>
+                </p>
+                <div class="footer">
+                    <p class="footer-text">Have an account?</p>
+                    <p class="footer-text text-blue">Log In</p>
+                </div>
+            </div>
+            <div class="side">
+
+                <h2 class="title-2">Profile</h2>
+                <form action="" class="form">
+                    <div class="row row-img">
+                        <div class="img">
+                            <img src="./assets/img/Image.png" alt="image">
+                        </div>
+                        <div class="upload-photo">
+                            <div class="upload">
+                                <label class="label label-upload">
+                                    <input type="file">
+                                    <span class="icon"></span>
+                                </label>
+                                <buton class="btn btn-small"></buton>
+                            </div>
+                            <p class="text">Up to 1 MB (300x300 px)</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-half">
+                            <label for="name" class="label">Name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="col col-half">
+                            <label for="email" class="label">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-half">
+                            <label for="country-2" class="label">Country</label>
+                            <div class="select">
+                                <select name="country" id="country-2" required>
+                                    <option value="select" selected disabled>Select</option>
+                                    <option value="ukr">Ukraine</option>
+                                    <option value="es">Spain</option>
+                                    <option value="gr">Germany</option>
+                                    <option value="pr">Portugal</option>
+                                    <option value="pk">Poland</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col col-half">
+                            <label for="city-2" class="label">City</label>
+                            <input type="text" id="city-2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-half">
+                            <label for="zip-code" class="label">Zip Code</label>
+                            <input type="select" id="zip-code">
+                        </div>
+                        <div class="col col-half">
+                            <label for="phone" class="label">Phone Number</label>
+                            <input type="text" id="phone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-min">Update</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
