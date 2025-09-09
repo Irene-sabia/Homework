@@ -1,0 +1,15 @@
+:root {
+  --main-font-family: "Gilroy-Medium", sans-serif;
+  --menu-font-family: "Roboto", sans-serif;
+  --title-font-family: "Gilroy-Bold", sans-serif;
+  --main-font-size: 18px;
+  --main-font-color: #070707;
+  --menu-font-color: #828282;
+
+  --main-background: #fff;
+  --additional-background: #f6f6f6;
+
+  --container-width: 940px;
+
+  --main-border-radius: 6px;
+}
