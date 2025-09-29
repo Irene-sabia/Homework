@@ -805,10 +805,9 @@ body {
   margin: 0;
 }
 .grid:last-of-type .button-border {
-  width: 300px;
   border: 1px solid #e4e4e4;
   text-align: center;
-  padding: 34px 0;
+  padding: 34px 65px;
 }
 .grid:last-of-type .button-border:hover {
   border-color: #e54f3a;
