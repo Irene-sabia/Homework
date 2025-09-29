@@ -1,0 +1,42 @@
+@function rem($px) {
+  @return $px / 18 * 1rem;
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin text-shadow-bg($color) {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 1px;
+    bottom: 0px;
+    transform: translate(8%, 30%);
+    width: 98%;
+    height: 0.65em;
+    opacity: 0.3;
+    background: $color;
+    z-index: -1;
+  }
+}
+
+@mixin btn($color, $border) {
+  @include text-shadow-bg($color);
+  color: $color;
+  border: $border;
+  background: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: rem(20);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
