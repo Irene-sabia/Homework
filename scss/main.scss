@@ -1,0 +1,29 @@
+@use "vars" as v;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-size: v.$font-size;
+  font-family: v.$font-famaly-main;
+  color: v.$font-color;
+  background: v.$background-main;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: v.$width-container;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(#ffddff, #123cdc);
+  padding: 16px 0;
+}
