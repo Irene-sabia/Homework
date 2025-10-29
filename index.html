@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesosn_30 JS DOM</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title header__title">JavaScript from Ivan
+                Vasylenko</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section>
+                <h2 class="title tilte_2">JavaScript Lessons</h2>
+                <ul class="lesson-list">
+                    <li class="lesson-list__item">JS Start</li>
+                    <li class="lesson-list__item">JS Type of Data</li>
+                    <li class="lesson-list__item">JS Operators</li>
+                    <li class="lesson-list__item">JS Conditions</li>
+                    <li class="lesson-list__item">JS Ciklu</li>
+                    <li class="lesson-list__item">JS Function</li>
+                    <li class="lesson-list__item">JS Object</li>
+                    <li class="lesson-list__item">JS Array</li>
+                    <li class="lesson-list__item">JS DOM</li>
+                </ul>
+            </section>
+            <button class="btn_lang" id="btn_lang" data-action="change" onclick="changeAttrLang('uk')">Change Attribute
+                lang</button>
+            <div class="btns" id="btns-action">
+                <a href="#" class="btn btn_action" data-purpose="action">Start</a>
+                <a href="#" class="btn btn_action" data-purpose="action">Finish</a>
+                <a href="#" class="btn btn_action" data-purpose="action">Change</a>
+                <a href="#" class="btn btn_action" data-purpose="action">Send</a>
+            </div>
+            <input type="text" placeholder="Amount UAH">
+            <div class="btns" id="btns-currency">
+                <a href="#" class="btn" id="btn-usd" data-currency="42.2" data-title="dollar">USD</a>
+                <a href="#" class="btn" id="btn-eur" data-currency="48.5" data-title="euro">EUR</a>
+                <a href="#" class="btn" id="btn-zlot" data-currency="10.8" data-title="zlotuj">Zlot</a>
+            </div>
+            <section class="text">
+                <h2>Title</h2>
+                <p class="first-par">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptas recusandae rerum dicta est
+                    quas culpa fuga quae molestiae in autem esse ipsum
+                    maxime quia ut, obcaecati ducimus perferendis, veritatis
+                    aut numquam! Harum commodi rem repudiandae laboriosam
+                    veritatis impedit, aperiam tenetur qui iusto ipsum ipsa
+                    nisi ipsam beatae autem doloribus molestias quae, enim
+                    quod eaque, labore possimus deserunt quisquam
+                    accusantium? Esse?</p>
+            </section>
+            <section class="text">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas recusandae rerum dicta est quas culpa fuga quae
+                    molestiae in autem esse ipsum maxime quia ut, obcaecati
+                    ducimus perferendis, veritatis aut numquam! Harum
+                    commodi rem repudiandae laboriosam veritatis impedit,
+                    aperiam tenetur qui iusto ipsum ipsa nisi ipsam beatae
+                    autem doloribus molestias quae, enim quod eaque, labore
+                    possimus deserunt quisquam accusantium? Esse?</p>
+            </section>
+            <section class="text"></section>
+            <!-- Блок текст -->
+            <section class="text" id="paragraphs">
+                <h2>Title</h2>
+                <p class="pharagraph">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptas recusandae rerum dicta est
+                    quas culpa fuga quae molestiae in autem esse ipsum
+                    maxime quia ut, obcaecati ducimus perferendis, veritatis
+                    aut numquam! Harum commodi rem repudiandae laboriosam
+                    veritatis impedit, aperiam tenetur qui iusto ipsum ipsa
+                    nisi ipsam beatae autem doloribus molestias quae, enim
+                    quod eaque, labore possimus deserunt quisquam
+                    accusantium? Esse?</p>
+                <p class="pharagraph">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptas recusandae rerum dicta est
+                    quas culpa fuga quae molestiae in autem esse ipsum
+                    maxime quia ut, obcaecati ducimus perferendis, veritatis
+                    aut numquam! Harum commodi rem repudiandae laboriosam
+                    veritatis impedit, aperiam tenetur qui iusto ipsum ipsa
+                    nisi ipsam beatae autem doloribus molestias quae, enim
+                    quod eaque, labore possimus deserunt quisquam
+                    accusantium? Esse?</p>
+                <p class="pharagraph">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptas recusandae rerum dicta est
+                    quas culpa fuga quae molestiae in autem esse ipsum
+                    maxime quia ut, obcaecati ducimus perferendis, veritatis
+                    aut numquam! Harum commodi rem repudiandae laboriosam
+                    veritatis impedit, aperiam tenetur qui iusto ipsum ipsa
+                    nisi ipsam beatae autem doloribus molestias quae, enim
+                    quod eaque, labore possimus deserunt quisquam
+                    accusantium? Esse?</p>
+            </section>
+            <section class="new-el" id="new-el">
+                <a class="create-link" data-tagname="a" onclick="alert(`${this.tagName}`)">Create a</a>
+                <a class="create-link" data-tagname="p">Create p</a>
+                <a class="create-link" data-tagname="div">Create div</a>
+            </section>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
